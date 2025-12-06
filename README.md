@@ -3,6 +3,7 @@ Relatório do trabalho da G2 - Hérica Becker
 O trabalho foi criar um sistema com TinyML, focado na classificação de 3 estados de luminosidade, luz forte, luz média e sem luz, utilizando o Edge Impulse para treinar um modelo de classificação, executando no ESP32.
 
 Sensores utilizados:
+
 Sensor: sensor de luz bh1750
 
 Atuador: led no D4, o led é ativado quando o modelo classifica que o sensor identificou a luz da lanterna.
