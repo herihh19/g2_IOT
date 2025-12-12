@@ -10,6 +10,12 @@ Atuador: led no D4, o led é ativado quando o modelo classifica que o sensor ide
 
 Workflow TinyML: utilizei o Edge Impulse seguindo o passo a passo para criar um classificador de dados. Utilizei três classes para coletar os dados transmitidos pelo ESP32 no Data Aquisition: iluminacaonormal, lanterna, tapando e fiz 10 registros para cada tipo de classe. Após eu fui no create impulse para criar um impulso, configurei para adicionar os blocos de Spectral Analysis e Classification, salvei o impulso e fui para o Spectral features, cliquei em autotune parameters e depois no botão de save parameters, aí ele vai para Generate features e é gerado onde foram gerados os dados de variações e fui para o Classifier cliquei em save e train aí foram gerados os dados do treinamento com 69.4% de acurácia e erros 0.54. Depois em Configure your deployment, foi adicionada a biblioteca do arduino e carregado os dados que foram gerados no Edge via arquivo ZIP, então no Código do arduino modifiquei para funcionar e adicionei o arquivo ZIP dentro para utilizar no código. E depois testei tudo no serial monitor para ver o funcionamento.
 
+Edge Impulse:
+<img width="745" height="626" alt="edge" src="https://github.com/user-attachments/assets/b571ce29-c819-46eb-be4c-237cc913147c" />
+<img width="730" height="637" alt="Edge2" src="https://github.com/user-attachments/assets/af2578bd-602c-4085-84d6-9dd58d48e52b" />
+
+
+
 Resultado:
 
 <img width="1512" height="712" alt="Captura de tela 2025-12-05 222700" src="https://github.com/user-attachments/assets/3e986f8a-b310-46ef-bbe2-8b55fc2269d4" />
